@@ -21,13 +21,13 @@ st.sidebar.markdown("# Portfolio")
 
 # Define the inputs
 # portfolio
-savings = int(st.sidebar.text_input('Current savings, $', '10000')) # savings
-cont_monthly = int(st.sidebar.slider('Monthly contribution to the current savings, $', 0, 10000, 1000, step=100)) # min, max, default
+savings = int(st.sidebar.text_input('Current Savings in US Dollars', '10000')) # savings
+cont_monthly = int(st.sidebar.slider('Monthly Contribution to the Current Savings', 0, 10000, 1000, step=100)) # min, max, default
 pf_risk_type = st.sidebar.radio('Portfolio Type?', ['Low risk', 'Medium risk', 'High risk']) # portfolio type
-curr_btc = float(st.sidebar.text_input('Number of BTC in your portfolio', '0')) # number of BTC in the portfolio
-curr_eth = float(st.sidebar.text_input('Number of ETH in your portfolio', '0')) # number of ETH in the portfolio
-curr_spy = float(st.sidebar.text_input('Number of SPY in your portfolio', '1')) # number of SPY in the portfolio
-curr_agg = float(st.sidebar.text_input('Number of AGG in your portfolio', '1')) # number of AGG in the portfolio
+curr_btc = float(st.sidebar.text_input('Number of BTC in Your Portfolio', '0')) # number of BTC in the portfolio
+curr_eth = float(st.sidebar.text_input('Number of ETH in Your Portfolio', '0')) # number of ETH in the portfolio
+curr_spy = float(st.sidebar.text_input('Number of SPY in Your Portfolio', '1')) # number of SPY in the portfolio
+curr_agg = float(st.sidebar.text_input('Number of AGG in Your Portfolio', '1')) # number of AGG in the portfolio
 
 # desired house
 st.sidebar.markdown("# Desired house")
