@@ -240,12 +240,12 @@ else:
             # check if user will able to buy the house in desired time period
             if result >= total_price:
                 st.markdown('### Result:')
-                st.markdown(f'### Congratulations! You will be able to buy a house with desired price ${total_price:,} in {num_years} years. :)))')
+                st.markdown(f'### Congratulations! You will be able to buy a house with desired price ${total_price:,} in {num_years} years. :)')
                 st.markdown(f'### You will have ${result:,.2f} from your investments and savings.')
                 st.markdown('This data is for informational purposes only.')
             elif result >= amount_needed:
                 st.markdown('### Result:')
-                st.markdown(f'### Congratulations! You can afford the {pct_down}% down payment on a house with desired price of ${total_price:,} in {num_years} years. :)))')
+                st.markdown(f'### Congratulations! You can afford the {pct_down}% down payment on a house with desired price of ${total_price:,} in {num_years} years. :)')
                 st.markdown(f'### You will have ${result:,.2f} from your investments and savings.')
                 st.markdown(
                     f'''### Make sure that you continue to save enough to pay the average monthly cost of ${monthly_payment_after_dp:,.2f}. 
