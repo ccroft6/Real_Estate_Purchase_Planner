@@ -22,7 +22,7 @@ st.sidebar.markdown("# Portfolio")
 # Define the inputs
 # portfolio
 savings = int(st.sidebar.text_input('Current Savings in US Dollars', '10000')) # savings
-cont_monthly = int(st.sidebar.slider('Monthly Contribution to the Current Savings', 0, 10000, 1000, step=100)) # min, max, default
+cont_monthly = int(st.sidebar.slider('Monthly Contribution to the Current Savings in $', 0, 10000, 1000, step=100)) # min, max, default
 pf_risk_type = st.sidebar.radio('Portfolio Type?', ['Low risk', 'Medium risk', 'High risk']) # portfolio type
 curr_btc = float(st.sidebar.text_input('Number of BTC in Your Portfolio', '0')) # number of BTC in the portfolio
 curr_eth = float(st.sidebar.text_input('Number of ETH in Your Portfolio', '0')) # number of ETH in the portfolio
@@ -30,12 +30,12 @@ curr_spy = float(st.sidebar.text_input('Number of SPY in Your Portfolio', '1')) 
 curr_agg = float(st.sidebar.text_input('Number of AGG in Your Portfolio', '1')) # number of AGG in the portfolio
 
 # desired house
-st.sidebar.markdown("# Desired house")
-total_price = int(st.sidebar.text_input('Desired house price $', '1500000')) # desired house price
-pct_down = float(st.sidebar.slider('Percent down on the house?', 0, 100, 20)) # min, max, default # divide by 100 later
-desired_city = st.sidebar.text_input('Desired city, state "Example: San Francisco, CA"', 'San Francisco, CA') # desired city
-st.sidebar.markdown("# Time period")
-num_years = int(st.sidebar.slider('How many years?', 0, 50, 15, step=1)) # min, max, default
+st.sidebar.markdown("# Desired House")
+total_price = int(st.sidebar.text_input('Desired House Price in $', '1500000')) # desired house price
+pct_down = float(st.sidebar.slider('Percent Down on the House?', 0, 100, 20)) # min, max, default # divide by 100 later
+desired_city = st.sidebar.text_input('Desired City, State ("Example: San Francisco, CA")', 'San Francisco, CA') # desired city
+st.sidebar.markdown("# Time Period")
+num_years = int(st.sidebar.slider('How Many Years?', 0, 50, 15, step=1)) # min, max, default
 
 # Checking if portfolio type is Low risk and (BTC or ETH = 0). Low risk doesn't contain the crypto
 if (pf_risk_type == "Low risk") and (curr_btc !=0 or curr_eth !=0):
