@@ -249,12 +249,12 @@ else:
                 st.markdown(f'### You will have ${result:,.2f} from your investments and savings.')
                 st.markdown(
                     f'''### Make sure that you continue to save enough to pay the average monthly cost of ${monthly_payment_after_dp:,.2f}. 
-                    * Calculated for a 30 year mortgage period - not including interest rate and taxes.'''
+                    * Calculated for a 30 year mortgage period, not including interest rate and taxes.'''
                     )
                 st.markdown('This data is for informational purposes only.')
             else:
                 st.markdown('### Result:')
-                st.markdown(f'### Sorry! You need more time or higher portfolio to buy a house in {num_years} years. :(((')
+                st.markdown(f'### Sorry! You need more time or higher portfolio to buy a house in {num_years} years. :(')
                 st.markdown(f'### You will have ${result:,.2f} from your investments and savings.')
                 st.markdown('This data is for informational purposes only.')
             st.markdown('---')
